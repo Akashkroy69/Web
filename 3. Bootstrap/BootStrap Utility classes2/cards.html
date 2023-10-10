@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Cards Bootstrap</title>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css">
+</head>
+
+<body>
+    <!-- Card Level 1: classes: card,card-body -->
+    <div class="card mx-auto" style="width: 18rem;">
+            <div class="card-body">
+                This is some text within a card body.
+            </div>
+        </div>
+
+
+        <hr>
+
+
+
+        <!--card Level 2 : classes: card title, card text-->
+        <div class="card mx-auto" style="width: 18rem;">
+            <img class="card-img-top" src="tom.jpg" alt="tom image"> <!-- + -->
+
+            <div class="card-body">
+                <h5 class="card-title" style="text-align:center;">Student ID</h5> <!-- + -->
+                <pre class="card-text">                                <!-- + -->
+            Name: tom
+            ID: 123
+            Grade: 7
+            Address: xyz
+        </pre>
+                <a href="#" class="btn btn-primary">Go somewhere</a>
+            </div>
+            <!-- 
+            1. Card titles are used by adding .card-title to a <h*> tag.
+            2. Subtitles are used by adding a .card-subtitle to a <h*> tag.
+                Note: If the .card-title and the .card-subtitle items are placed in a .card-body item,
+                the card title and subtitle are aligned nicely.
+            3. links are added and placed next to each other by adding .card-link to an <a> tag.
+            4. 
+         -->
+        </div>
+        <hr>
+        <!--card level 3 -->
+        <div class="card" style="width: 18rem;">
+            <ul class="list-group list-group-flush">
+                <li class="list-group-item">An item</li>
+                <li class="list-group-item">A second item</li>
+                <li class="list-group-item">A third item</li>
+            </ul>
+            <div class="card-footer">
+                Card footer
+            </div>
+        </div>
+
+        <div class="container">
+
+            <!-- font-size: 16px; /* Default font size for the entire page */
+            font-size: 2rem; /* This will be 32px (2 times the default font size) */
+            font-size: 1.5rem; /* This will be 24px (1.5 times the default font size) */ -->
+        </div>
+</body>
+
+</html>
+<!-- 
+    doubt 1: what is rem?
+    Rem (short for “root-em”) units dictate an element's font size relative to the size of the root element. By default, 
+    most browsers use a font size value of 16px. So, if the root element is 16px, an element with the value 1rem will also equal 16px.
+
+
+ -->

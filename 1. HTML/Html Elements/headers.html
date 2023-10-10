@@ -1,0 +1,107 @@
+<html>
+
+<head>
+    <style>
+        .scrolling-text {
+            white-space: nowrap;
+            /* Prevent text from wrapping */
+            overflow: hidden;
+            /* Hide overflowing content */
+            animation: scroll 50s linear infinite;
+            /* Apply the animation */
+        }
+
+        @keyframes scroll {
+            0% {
+                transform: translateX(100%);
+                /* Start offscreen to the right */
+            }
+
+            100% {
+                transform: translateX(-100%);
+                /* Scroll to the left */
+            }
+        }
+    </style>
+</head>
+<!--we can use various header tags for displaying different header-->
+<h1>Hi Stacy</h1>
+<h2>Hi Stacy</h2>
+<h3>Hi Stacy</h3>
+<h4>Hi Stacy</h4>
+<h5>Hi Stacy</h5>
+<h6>Hi Stacy</h6>
+
+<!--If we want to write a paragraph we can use <p> tag-->
+<p>This is a paragraph. Where we are writing a long story. </p>
+
+<!-- tags similar to p tag that can be used to write a block of texts -->
+<div>
+    This is a div element.
+</div>
+
+<p>This is a <span style="color: blue;">blue</span> word.</p>
+
+
+<blockquote>
+    This is a quoted text.
+</blockquote>
+
+<pre>
+    This text
+    is preformatted.
+</pre>
+
+<p>The book <cite>The Great Gatsby</cite> was written by F. Scott Fitzgerald.</p>
+
+<address>
+    Contact: John Doe<br>
+    Email: john@example.com
+</address>
+<!-- ---------------------------------------------------------- -->
+<marquee direction="left" behavior="scroll" scrollamount="5">
+    This is a scrolling text.
+</marquee>
+<!-- this is not working -->
+<marquee direction="up" behavior="alternate">
+    <img src="tom.jpg" alt="Scrolling Image" width="50px" height="50px">
+</marquee>
+
+<div class="scrolling-text">
+    This is a scrolling text using CSS animations.
+</div>
+
+<!-- ----------- -->
+
+
+
+<!-- This is bold text -->
+<b>this is bold text</b>
+
+<!-- This is bold text with extra importance -->
+<strong>this is bold text with extra importance</strong>
+
+<!-- This is italic text -->
+<i>this is italic text</i>
+
+<!-- This is highlighted text -->
+<em>this is highlighted text</em>
+
+<!-- This is marked text -->
+<mark>This is marked text</mark>
+
+<!-- This is small text -->
+<small>this is small text</small>
+
+<!-- This is deleted text -->
+<del>this is deleted text</del>
+
+<!-- This is subscript -->
+<sub>This is subscript</sub>
+
+<!-- This is superscript -->
+<sup>This is superscript</sup>
+
+
+
+</html>

@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Psuedo classes</title>
+<style>
+a:link {
+  color: white;
+}
+
+a:hover {
+  color: rgb(32, 182, 215);
+
+}
+a:active {
+  color: rgb(33, 7, 56);
+
+ 
+}
+/*--------------*/
+ /* Normal button style */
+ .my-button {
+      padding: 10px 20px;
+      background-color: #007bff;
+      color: #fff;
+      border: none;
+      cursor: pointer;
+    }
+
+    /* Style when hovered over */
+    .my-button:hover {
+      background-color: #0056b3;
+    }
+
+    /* Style when clicked or active */
+    .my-button:active {
+      background-color: #003d80;
+    }
+
+    /* Style when focused */
+    .my-button:focus {
+      outline: none; /* Remove default focus outline */
+      box-shadow: 0 0 5px rgba(0, 123, 255, 0.5); /* Add custom focus style */
+    }
+  </style>
+
+</style>
+</head>
+<body>
+
+<h2>Link Button</h2>
+<p>A link styled as a button:</p>
+<a href="https://www.google.com/" target="_blank">This is a link</a>
+
+<button class="my-button">Hover Me</button>
+
+</body>
+</html>
+

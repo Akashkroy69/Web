@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <title>Bootstrap Badges</title>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+</head>
+
+<body>
+  <!-- Badges in Bootstrap are small, informative components that you can use 
+  to display numbers or status indicators on various elements such as buttons, links, or navigation elements. -->
+  <div class="container">
+    <!-- Basic badge -->
+    <span class="badge badge-primary">Basic Badge</span>
+    <!-- properties of badges: -->
+
+    <!--1. To make a badge a pill shape, you can add the .badge-pill class: -->
+    <span class="badge badge-primary badge-pill">Pill</span>
+
+
+    <!--2. Badges can be used as part of links or buttons to provide a counter. we can use span inline element to include badges -->
+    <button class="btn btn-primary">
+      Notifications <span class="badge badge-light">4</span>
+    </button>
+    <!-- -->
+    <button class="btn btn-primary">
+      Notifications <span class="badge position-absolute top-0 start-100 badge-pill badge-danger ">99+</span>
+      <!-- position-absolute: positions the badge absolutely within its parent element.
+           it allows you to place the badge anywhere relative to its parent element. 
+          
+          class="top-0": This class sets the top position of the badge to 0, 
+          which means it will be positioned at the top of its parent element.
+
+          class="start-100": This class sets the horizontal (left) position of the badge to 100%
+        
+        -->
+    </button>
+
+
+    <!--3. Badge on Links: You can also add badges to links to indicate the number of notifications or messages. -->
+    <a href="#">Messages <span class="badge badge-danger">7</span></a>
+
+
+    <!--4. Badges scale to match the size of the immediate parent element by using relative font sizing -->
+    <h1>Example heading <span class="badge badge-secondary">New</span></h1>
+    <h2>Example heading <span class="badge badge-secondary">New</span></h2>
+    <h3>Example heading <span class="badge badge-secondary">New</span></h3>
+    <h4>Example heading <span class="badge badge-secondary">New</span></h4>
+    <h5>Example heading <span class="badge badge-secondary">New</span></h5>
+    <h6>Example heading <span class="badge badge-secondary">New</span></h6>
+
+    <h2>Contextual Badges: Classes For Different Styles</h2>
+    <span class="badge badge-primary">Primary</span>
+    <span class="badge badge-secondary">Secondary</span>
+    <span class="badge badge-success">Success</span>
+    <span class="badge badge-danger">Danger</span>
+    <span class="badge badge-warning">Warning</span>
+    <span class="badge badge-info">Info</span>
+    <span class="badge badge-light">Light</span>
+    <span class="badge badge-dark">Dark</span>
+
+    <!-- NOTE: You can use JavaScript to dynamically update the content of badges. For example, you might retrieve the number
+ of new messages from a database and display it in a badge. -->
+
+  </div>
+
+</body>
+
+</html>

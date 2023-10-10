@@ -1,0 +1,82 @@
+/* Universal Selector */
+* {
+    margin: 0;
+    padding: 0;
+    text-align: center;
+}
+
+/* Element Selector */
+h1 {
+    color: blue;
+}
+
+/* Class Selector */
+.special {
+    font-weight: bold;
+}
+
+/* ID Selector */
+#unique {
+    text-decoration: underline;
+}
+
+/* Descendant Selector */
+header ul {
+    list-style-type: none;
+}
+
+/* Child Selector */
+nav > ul > li {
+    display: inline;
+    margin-right: 20px;
+}
+
+/* Attribute Selector */
+a[href="https://www.example.com"] {
+    color: green;
+}
+
+/* Pseudo-class Selector */
+a:hover {
+    text-decoration: underline;
+    color: red;
+}
+
+/* Grouping Selector */
+h2, h3 {
+    font-style: italic;
+}
+
+/* Adjacent Sibling Selector */
+h1 + nav {
+    margin-top: 20px;
+}
+
+/* First Child Pseudo-class Selector */
+nav ul li:first-child {
+    font-weight: bold;
+}
+
+/* Last Child Pseudo-class Selector */
+nav ul li:last-child {
+    font-style: italic;
+}
+
+/* Not Selector */
+p:not(.special) {
+    color: gray;
+}
+
+header,footer{
+    background-color: rgb(243, 200, 8);
+    color: aliceblue;
+    text-align: center;
+    margin: 10px;
+    padding: 5px;
+}
+
+footer{
+    width: 100%;
+    position: absolute;
+    bottom: 0px;
+}

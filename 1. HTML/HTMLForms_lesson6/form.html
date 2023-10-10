@@ -1,0 +1,54 @@
+<html>
+
+<head>
+    <title>Sample Form with Attributes</title>
+</head>
+
+<body>
+
+    <h2>Sample Form with Various Form Elements</h2>
+
+    <!-- Form with a POST method to submit data -->
+    <form action="/submit" method="post">
+        <fieldset>
+            <legend>Fill the details</legend>
+
+            <!-- Text Input -->
+            <label for="username">Username:</label>
+            <input type="text" id="username" name="username" placeholder="Enter your username" required><br><br>
+
+            <!-- Password Input -->
+            <label for="password">Password:</label>
+            <input type="password" id="password" name="password" placeholder="Enter your password" required><br><br>
+
+            <!-- Radio Buttons -->
+            <label>Gender:</label>
+            <input type="radio" name="gender" value="male" checked> Male
+            <input type="radio" name="gender" value="female"> Female<br><br>
+
+            <!-- Checkboxes -->
+            <label>Interests:</label>
+            <input type="checkbox" name="interests" value="sports"> Sports
+            <input type="checkbox" name="interests" value="music"> Music<br><br>
+
+            <!-- Textarea -->
+            <label for="feedback">Feedback:</label><br>
+            <textarea id="feedback" name="feedback" placeholder="Enter your feedback" rows="4" cols="50"
+                required></textarea><br><br>
+
+            <!-- Dropdown List -->
+            <label for="country">Select a country:</label>
+            <select id="country" name="country">
+                <option value="usa">United States</option>
+                <option value="canada">Canada</option>
+                <option value="uk">United Kingdom</option>
+            </select><br><br>
+
+            <!-- Submit Button -->
+            <button type="submit">Submit</button>
+        </fieldset>
+    </form>
+
+</body>
+
+</html>

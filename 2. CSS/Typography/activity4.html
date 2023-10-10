@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <style>
+    *{
+      /*
+      
+    The text-align property is used to specify the horizontal alignment of text within an element. It can take the following values:
+
+    left: Text is aligned to the left edge of the element (default).
+    right: Text is aligned to the right edge of the element.
+    center: Text is centered horizontally within the element.
+    justify: Text is justified, meaning it is stretched to fill the entire width of the element.
+    
+    */
+      text-align: center;
+      font-family: monospace;
+    }
+    #text{
+      text-shadow: 2px 2px 1px #CC5500;
+      /* (right-offset)px (left-offset)px (fade)px color*/
+    }
+    #box{
+      box-shadow: 9px 9px 5px #301934;
+      /* (right-offset)px (left-offset)px (fade)px color*/
+    }
+	#indent{
+            text-indent: 50%; /*16px or -3em*/
+        }
+  </style>
+</head>
+
+<body>
+    <h1 id="text">We can use text-shadow to give shadow to text itself</h1>
+  
+    <h1 id="box">Or use box-shadow to give shadow to the element</h1>
+
+	<div>
+        <p>This is an example of text-indent.</p>
+        <p id="indent">This is an example of text-indent.</p>
+    </div>
+	
+</body>
+
+</html>

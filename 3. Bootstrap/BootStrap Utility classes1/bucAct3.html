@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <title>Bootstrap progress-bar</title>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+</head>
+<body>
+
+  <!-- Basic Progress Bar:
+
+To create a basic progress bar, use the .progress class along with the .progress-bar class. 
+You can set the width of the progress bar using the style attribute or by adding the .w-* classes. -->
+
+<!-- 1. Basic progress bar -->
+<div class="container">
+  <h2>Basic Progress Bar</h2>
+  <p>To create a default progress bar, add a .progress class to a container element and add the progress-bar class to its child element. Use the CSS width property to set the width of the progress bar:</p>
+  <div class="progress"> 
+    <div class="progress-bar" style="width:70%">70%</div>
+  </div>
+</div>
+
+<!--2. Striped Progress Bar:
+
+You can add stripes to the progress bar by using the .progress-bar-striped class: -->
+<div class="container">
+  <h2>stripped progress bar</h2>
+<div class="progress mt-3">
+  <div class="progress-bar progress-bar-striped" style="width: 75%;">75%</div>
+</div>
+
+
+</div>
+
+<!--3. Animated Progress Bar:
+
+To make the stripes in the progress bar animate, add the .progress-bar-animated class: -->
+<div class="container">
+  <h2>stripped progress bar with animation</h2>
+<div class="progress mt-3">
+  <div class="progress-bar progress-bar-striped progress-bar-animated" style="width: 95%;">95%</div>
+</div>
+
+
+</body>
+</html>

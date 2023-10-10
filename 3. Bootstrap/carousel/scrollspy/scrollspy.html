@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <title>Scrollspy</title>
+    <!-- Include Bootstrap CSS and JavaScript dependencies -->
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.16.0/umd/popper.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+</head>
+<!-- data-spy="scroll": Enables the Scrollspy behavior.
+
+    data-target=".navbar": Specifies the target element that contains the navigation links to highlight. 
+    In this case, it targets elements with the .navbar class.
+    
+    data-offset="50": Sets the offset value, which determines when a link is considered "active." 
+    In this example, it's set to 50 pixels from the top. 
+-->
+
+<body data-spy="scroll" data-target=".navbar" data-offset="50" style="padding-top: 50px;">
+    <!-- Bootstrap Navbar -->
+   
+    <nav class="navbar navbar-expand-sm bg-dark navbar-dark fixed-top">
+        <ul class="navbar-nav">
+            <!-- Navigation links with href attributes pointing to section IDs -->
+            <li class="nav-item">
+                <a class="nav-link" href="#section1">Section 1</a>
+            </li>
+            <li class="nav-item">
+                <a class="nav-link" href="#section2">Section 2</a>
+            </li>
+            <li class="nav-item">
+                <a class="nav-link" href="#section3">Section 3</a>
+            </li>
+        </ul>
+    </nav>
+
+    <!-- Sections -->
+    <div id="section1" class="container-fluid" style="height:500px;background-color:lightgray">
+        <h1>Section 1</h1>
+        <p>This is the first section.</p>
+    </div>
+
+    <div id="section2" class="container-fluid" style="height:500px;background-color:lightblue">
+        <h1>Section 2</h1>
+        <p>This is the second section.</p>
+    </div>
+
+    <div id="section3" class="container-fluid" style="height:700px;background-color:lightcoral">
+        <h1>Section 3</h1>
+        <p>This is the third section.</p>
+    </div>
+
+</body>
+
+</html>
+<!-- 
+    1. create 3 sections with some id, define bgcolor,height, use container-fluid class.
+    2. create nav bar
+ -->

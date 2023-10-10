@@ -1,0 +1,139 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CSS All Concept Project</title>
+    <style>
+        /* Reset some default browser styles */
+        body, h1, p {
+            margin: 0;
+            padding: 0;
+        }
+
+        /* Basic styling */
+        body {
+            font-family: Arial, sans-serif;
+            background-color: #f0f0f0;
+            color: #333;
+            text-align: center;
+        }
+
+        /* Header styles */
+        header {
+            background-color: #e1610b;
+            color: #fff;
+            padding: 20px;
+        }
+
+        h1 {
+            font-size: 36px;
+        }
+
+        /* Navigation menu styles */
+        nav {
+            background-color: #e39d42;
+        }
+
+        ul {
+            list-style: none;
+            padding: 0;
+        }
+
+        li {
+            display: inline;
+            margin-right: 20px;
+        }
+
+        /* Main content styles */
+        .container {
+            width: 80%;
+            margin: 0 auto;
+            padding: 20px;
+            background-color: #fff;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+        }
+
+        /* Box model styles */
+        .box {
+            border: 2px solid #ccc;
+            padding: 10px;
+            margin: 10px;
+        }
+
+        /* CSS positioning */
+        .absolute {
+            position: absolute;
+            top: 20px;
+            right: 20px;
+            background-color: #ff5722;
+            color: #fff;
+            padding: 5px 10px;
+            border-radius: 5px;
+        }
+
+        /* CSS animation */
+        .animate {
+            animation: fadeIn 2s;
+        }
+
+        @keyframes fadeIn {
+            0% { opacity: 0; }
+            100% { opacity: 1; }
+        }
+
+        /* Pseudo-classes */
+        a {
+            color: #333;
+            text-decoration: none;
+        }
+
+        a:hover {
+            color: #ff5722;
+        }
+
+        /* Text styling */
+        .highlight {
+            color: #ff5722;
+            font-weight: bold;
+        }
+
+        .italic {
+            font-style: italic;
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <h1>CSS All concepts Project</h1>
+    </header>
+    <nav>
+        <ul>
+            <li><a href="#">Home</a></li>
+            <li><a href="#">About</a></li>
+            <li><a href="#">Services</a></li>
+            <li><a href="#">Contact</a></li>
+        </ul>
+    </nav>
+    <div class="container">
+        <h2>Welcome to our <span class="highlight">Sample Project</span></h2>
+        <p>This is a simple project that demonstrates basic HTML and CSS concepts.</p>
+        <img src="tom.jpg" alt="Sample Image">
+        <ul>
+            <li>HTML Structure</li>
+            <li>CSS Styling</li>
+            <li>Responsive Design</li>
+        </ul>
+        <div class="box animate">
+            <p>This is a box with some text. It demonstrates the box model.</p>
+        </div>
+        <div class="box">
+            <p class="absolute">Positioned Absolute</p>
+            <p>This box is positioned absolutely. It demonstrates CSS positioning.</p>
+        </div>
+        <p>This text is animated. It demonstrates CSS animation.</p>
+        <p><a href="#">Hover over this link</a> to see a pseudo-class effect.</p>
+        <p class="italic">This text is styled with the <span class="highlight">italic</span> class.</p>
+    </div>
+</body>
+</html>

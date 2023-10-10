@@ -1,0 +1,163 @@
+<html>
+
+<head>
+    <title>Test Typography And bootstrap</title>
+    <!-- name="viewport": This attribute specifies the name of the metadata, which is "viewport" in this case. 
+        The viewport meta tag is used to control how the web page's content should be scaled and displayed within 
+        the viewport of the user's device.
+
+        content="width=device-width, initial-scale=1": This attribute specifies the content or value associated 
+        with the "viewport" metadata.
+
+        width=device-width: This part of the content specifies that the width of the viewport should be set to the
+         device's width. In other words, it tells the browser to make the web page as wide as the screen or viewport of the device.
+
+        initial-scale=1: This part of the content sets the initial zoom level or scale factor to 1. It means that when the web page 
+        is initially loaded, it should be displayed at a 1:1 scale, which means it's not zoomed in or out. -->
+    <meta name="viewport" content="width = device-width, initial-scale = 1">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css">
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"></script>
+
+</head>
+
+<body>
+    <!--The .container class provides a responsive fixed width container.
+In the below example, the div with class “container” will have a fixed left a
+nd right margin and will not take the complete width of its parent or the viewport.-->
+    <div class="container">
+        <h1 class="text-warning bg-dark display-4">header 1 tag</h1>
+        <h2>header 2 tag</h2>
+        <h3>header 3 tag</h3>
+        <h4>header 4 tag</h4>
+        <h5>header 5 tag</h5>
+        <h6>header 6 tag</h6>
+
+        <p class="h1 text-primary">.h1 through .h6 classes are also available, for when you want to match the font
+            styling of a heading </p><br>
+        <p class="h2 text-primary-emphasis">.h1 through .h6 classes are also available, for when you want to match the
+            font styling of a heading </p><br>
+        <p class="h3 text-secondary">.h1 through .h6 classes are also available, for when you want to match the font
+            styling of a heading </p><br>
+        <p class="h4 text-danger">.h1 through .h6 classes are also available, for when you want to match the font
+            styling of a heading </p><br>
+        <p class="h5 text-info">.h1 through .h6 classes are also available, for when you want to match the font styling
+            of a heading </p><br>
+        <p class="h6 text-info-emphasis">.h1 through .h6 classes are also available, for when you want to match the font
+            styling of a heading </p><br>
+    </div>
+
+
+    <!--The .container-fluid class provides a full-width container which spans the entire width of the viewport.
+In the below example, the div with class “container-fluid” will take up the complete width of the viewport 
+and will expand or shrink whenever the viewport is resized. -->
+    <div class="container-fluid">
+        <h1>header 1 tag</h1>
+        <h2>header 2 tag</h2>
+        <h3>header 3 tag</h3>
+        <h4>header 4 tag</h4>
+        <h5>header 5 tag</h5>
+        <h6>header 6 tag</h6>
+    </div>
+
+
+    <div class="container">
+        <!--small for subheader-->
+        <h3>
+            Fancy display heading
+            <small class="text-muted">With faded secondary text</small>
+        </h3>
+        <!--LEAD-->
+        <p>Normal Paragraph</p>
+        <p class="lead">Lead Paragraph</p><br><br>
+        <!--Mark-->
+        <p>Normal</p>
+        <mark>Highlighted</mark><br><br>
+        <!--Description List: terms and descriptions-->
+        <h1>contacts</h1>
+        <dl>
+            <dt>S</dt>
+              <dd>Stacy</dd>
+              <dd>Stacy</dd>
+              <dd>Stacy</dd>
+              <dd>Stacy</dd>
+              <dd>Stacy</dd>
+            <dt>A</dt>
+              <dd>Akash</dd>
+              <dd>Akash</dd>
+              <dd>Akash</dd>
+
+        </dl>
+        <!--mark,code-->
+        <p>this is <mark>marked text</mark> and this is <code>some code</code>. There are various tags and elements in
+            HTML, example
+            <code>div</code>,<code>body</code> and so on
+        </p>
+        <!-- 3 -->
+        <!--abbreviation-->
+        <p><abbr title=" Cristiano Ronaldo dos Santos Aveiro">Cristiano Ronaldo</abbr>, the football icon, holds a
+            series of rare records in his illustrious career. He's the first player to score 100+ goals in the UEFA
+            Champions League, and he's the only player to achieve this feat for three different clubs. Ronaldo is also
+            the all-time top scorer for both Portugal's national team and Real Madrid. Beyond his footballing exploits,
+            he's known for his incredible work ethic and philanthropic efforts,
+            exemplifying the dedication of a true sports legend both on and off the pitch. </p>
+
+        <!--blockquote-->
+        <p>BlockQuote is used to quote content from other resources </p>
+        <blockquote class="blockquote" cite="https://www.brainyquote.com/quotes/dalai_lama_105551" 
+        style="border: 2px solid black; padding: 10px;margin: 10px 0; ">
+            <p>If you want others to be happy, practice compassion. If you want to be happy, practice compassion.</p>
+            <footer class="blockquote-footer text-primary">Dalai Lama</footer>
+        </blockquote>
+
+        <!--Multiple lines of code, see note-1-->
+        <h3>Some code</h3>
+        <pre style="border: 5px solid black;">
+            &lt;div class="container-fluid"&gt;
+                &lt;h1&gt;header 1 tag&lt;/h1&gt;
+                &lt;h2&gt;header 2 tag&lt;/h2&gt;
+                &lt;h3&gt;header 3 tag&lt;/h3&gt;
+                &lt;h4&gt;header 4 tag&lt;/h4&gt;
+                &lt;h5&gt;header 5 tag&lt;/h5&gt;
+                &lt;h6&gt;header 6 tag&lt;/h6&gt;
+            &lt;/div&gt;
+            HTML special characters like < and > are replaced with their HTML entity codes (&lt; and &gt;) to ensure they 
+            are displayed as text within the &ltpre&gt element rather than being interpreted as HTML tags.
+            &lt;: Represents the less-than sign <.
+            &gt;: Represents the greater-than sign >.
+            &amp;: Represents the ampersand &.
+            &quot;: Represents double quotation marks ".
+            &apos;: Represents an apostrophe or single quotation mark '.
+        </pre>
+
+       <!--keyboard input-->
+       <p>this is shortcut for copying the content <kbd>ctrl + c</kbd></p>
+    </div>
+    <div class="text-primary">This is default primary text</div>
+    <div class="text-primary" style="--bs-text-opacity: .5;">This is default primary text</div>
+    <div class="text-primary text-opacity-75">This is 75% opacity primary text</div>
+    <div class="text-primary text-opacity-50">This is 50% opacity primary text</div>
+    <div class="text-primary text-opacity-25">This is 25% opacity primary text</div>
+</body>
+
+</html>
+
+<!--Training flow:
+    1. explain container and container-fluid
+    2. introduce class and use different color classes,display-1-4, bg-dark. : Q; how do we apply multiple classes in any element?
+    3. class: small, lead, mark, code
+    3. explain that we have .h1-.h6 class as well that can be used to apply the text formats of different headers with any element-->
+
+
+<!--NOTE
+Note-1: HTML special characters like < and > are replaced with their HTML entity codes (&lt; and &gt;) to ensure they are displayed as 
+text within the <pre> element rather than being interpreted as HTML tags.
+        HTML special characters like < and > are replaced with their HTML entity codes (&lt; and &gt;) to ensure they 
+            are displayed as text within the &ltpre&gt element rather than being interpreted as HTML tags.
+            &lt;: Represents the less-than sign <.
+            &gt;: Represents the greater-than sign >.
+            &amp;: Represents the ampersand &.
+            &quot;: Represents double quotation marks ".
+            &apos;: Represents an apostrophe or single quotation mark '.
+
+
+-->

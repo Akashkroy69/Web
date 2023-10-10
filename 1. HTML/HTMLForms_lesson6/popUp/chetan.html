@@ -1,0 +1,123 @@
+<!-- <!DOCTYPE html>
+<html>
+
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width">
+  <title>replit</title>
+  <link href="style.css" rel="stylesheet" type="text/css" />
+  <style>
+
+      nav li{
+      display: inline;
+      margin:5px;
+    }
+    /* popup container design */
+    .popup-container{
+      display:none;
+      position: fixed;
+      top:50%;
+      left:50%;
+      transform: translate(-50%,-50%)
+      background-color: red;
+      padding:20px;
+      border:1px solid black
+    }
+    /* designing .overlay background  */
+    .overlay{
+      display: none;
+      position: fixed;
+      top: 0;
+      left: 0;
+      width: 100%;
+      height: 100%;
+      background-color: red;
+    }
+    /*  designing close button that has been defined using span in div popup .popup-container  */
+    .close-button{
+      position: absolute;
+      top: 10px;
+      right: 10px;
+      cursor: pointer;
+    }
+
+</style>
+</head>
+
+<body>
+<header style="text-align: center;">
+
+ <h1>The News</h1>
+  <br>
+<button class="trigger-Button" onclick="togglePopup()">
+     Sign in
+</button>
+
+  <!--overlay background-->
+  <div class="overlay" id="overlay" onclick="togglePopup()"></div>
+
+  <!--pop-up container-->
+  <div class="popup-container" id="popup">
+    <span class=="close-button" onclick="togglePopup()">&#10006;</span>
+    <h2>Sign In</h2>
+    <p>You need to sign in. (work In Progress, We are adding membership program)</p>
+    
+  </div>
+
+  <!--script for handling behaviour-->
+<script>
+  //javascript function to handle behaviour
+  function togglePopup(){
+    var popup = document.getElementById("popup");
+    var overlay = document.getElementById("overlay");
+    if(popup.style.display === "block"){
+      popup.style.display = "none";
+      overlay.style.display = "none";
+    }else{
+      popup.style.display="block";
+      overlay.style.display="block";
+    }
+  }
+</script>
+
+  
+  <br><hr />
+  <nav style="color: ; text-align: center;">
+
+  <ul>
+
+     <li><a href="india.html">India</a></li>
+     <li><a href="world.html">World</a></li>
+     <li><a href="sports.html">Sports</a></li>
+    
+  </ul>
+    
+  </nav>
+  <hr />
+  
+</header>
+  <main style="text-align: center;">
+     <h3 style="font-size: 40px;">India</h3>
+
+
+
+        
+
+   <strong><p>Women’s reservation bill | Govt. introduces ‘Nari Shakti Vandan Adhiniyam’ in Lok Sabha.</p></strong>
+    <br>
+    <p>Making it the first bill to be introduced in the new Parliament building, the government said it will enable greater participation of women in policy-making at the State and national levels</p>
+    <br>
+    <img src="https://th-i.thgim.com/public/incoming/wcvuje/article67322106.ece/alternates/LANDSCAPE_1200/PTI09_19_2023_000096B.jpg">
+    <br><hr />
+   <a href="un.html" <p>U.N. chief says<br> people are looking to leaders<br> for action and a way out of<br> the current global 'mess</p></a><a href="foreign.html"> <p>India rejects Canadian PM Justin Trudeau’s <br>allegations on killing of<br> pro-Khalistan activist Hardeep Singh Nijjar,<br> expels diplomat</p></a>
+    <br>
+  <a href="#"><p>Aditiya L1 probe leaves the Earth,<br> and sets off for the sun.</p></a>
+  </main>
+  <footer style="background-color: gray; text-align: center; padding: 2px;">
+
+        <p>&copy; Copyright 2023 The News. All rights reserved</p>
+    
+  </footer>
+</body>
+
+</html> -->

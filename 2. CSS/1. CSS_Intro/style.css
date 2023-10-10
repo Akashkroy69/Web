@@ -1,0 +1,88 @@
+/* universal selector */
+*{
+    background-color: black;
+    color: whitesmoke;
+    text-align: center;
+}
+
+/* type selector(element selector), hx, p, div */
+p{
+    text-align: start;
+    background-color: cadetblue;
+    font-size: 40px;
+}
+/* psuedo class selectors(will learn about them in details */
+p:hover{
+    background-color: chartreuse;
+}
+
+/* Pseudo-elements: */
+div::first-line{
+    color: rgb(66, 3, 125);
+    font-size: 30px;
+}
+
+/* Descendant Selector: Selects elements that are descendants of a specified element. */
+div section{
+    background-color: blue;
+    color: aliceblue;
+}
+
+/* class selector */
+.highlight{
+    background-color: burlywood;
+}
+
+/* id selector */
+#id1{
+    background-color: aqua;
+    color: brown;
+}
+
+/* group selector */
+header,footer{
+    background-color: rgb(243, 200, 8);
+    color: aliceblue;
+    text-align: center;
+    margin: 10px;
+    padding: 5px;
+}
+
+/* Attribute selector -------------------*/
+input[type="text"]{
+    background-color: yellow;
+    color: green;
+    border: 5px solid black;
+}
+input[type="password"]{
+    background-color: yellow;
+    color: brown;
+    border: 5px solid black;
+}
+input{
+    background-color: aqua;
+    color: red;
+}
+
+
+
+
+/* NOT Selector------------------------------------------- */
+p:not(.special){
+    font-size: 30px;
+}
+
+/*------------------ COMBINATORS-------------------------- */
+
+/* Adjacent Sibling Selector*/
+h3 + article{
+    background-color: rgb(227, 134, 12);
+    color: green;
+}
+
+/* child selector: Selects elements that are direct children of a specified element. */
+ul > li{
+    list-style-type: square;
+    cursor: pointer;
+    text-align: start;
+}

@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>Bootstrap Spinners</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+</head>
+
+<body>
+
+    <!-- spinner level 1 -->
+    <div class="container">
+        <h2>Spinners</h2>
+        <p>To create a spinner/loader, use the <code>.spinner-border</code> class:</p>
+        <!-- main code for spinner -->
+        <div class="spinner-border"></div>
+    </div>
+
+
+
+    
+    <!-- spinner level 2 visually hidden -->
+    <div class="spinner-border" role="status">
+        <span class="sr-only">Loading...</span> <!-- visually-hidden class 
+        The "visually-hidden" class is specifically designed to visually hide content while making it accessible to screen readers.
+
+        If that is not working, you can use the "sr-only" class in Bootstrap. -->
+    </div>
+
+
+
+    <!-- spinner level 3, with color-->
+    <div class="container">
+        <h2>Spinners</h2>
+        <p>Spinners with different color</code> class:</p>
+        <!-- main code for spinner -->
+        <div class="spinner-border text-primary" role="status"></div>
+        <div class="spinner-border text-secondary" role="status"></div>
+        <div class="spinner-border text-success" role="status"></div>
+        <div class="spinner-border text-danger" role="status"></div>
+        <div class="spinner-border text-warning" role="status"></div>
+        <div class="spinner-border text-info" role="status"></div>
+        <div class="spinner-border text-light" role="status"></div>
+        <div class="spinner-border text-dark" role="status"></div>
+    </div>
+
+    <!-- spinner level 4, growing spinner-->
+    <div class="container">
+        <h2>Spinners</h2>
+        <p>Growing Spinners with different color</code> class:</p>
+        <!-- main code for spinner -->
+        <div class="spinner-grow text-primary" role="status"></div>
+        <div class="spinner-grow text-secondary" role="status"></div>
+        <div class="spinner-grow text-success" role="status"></div>
+        <div class="spinner-grow text-danger" role="status"></div>
+        <div class="spinner-grow text-warning" role="status"></div>
+        <div class="spinner-grow text-info" role="status"></div>
+        <div class="spinner-grow text-light" role="status"></div>
+        <div class="spinner-grow text-dark" role="status"></div>
+        <hr>
+        <!-- size -->
+        <h2>size</h2>
+        <div class="spinner-border" style="width: 3rem; height: 3rem;" role="status"></div>
+        <div class="spinner-grow" style="width: 3rem; height: 3rem;" role="status"></div>
+
+    </div>
+
+    <!-- spinner level 5, with buttons-->
+    <div class="container">
+        <button class="btn btn-primary" type="button">
+            <span class="spinner-grow spinner-grow-sm"></span>
+            <span role="status">Loading...</span>
+          </button>
+    </div>
+
+</body>
+
+</html>
+
+<!-- 
+
+spinner-border-sm
+.spinner-border-sm {
+  height: 1rem;
+  width: 1rem;
+  border-width: 2px;
+}
+
+ -->

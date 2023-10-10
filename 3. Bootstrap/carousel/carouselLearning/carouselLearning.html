@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+    <!-- Bootstrap JS (jQuery and Popper.js are required) -->
+    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.5.3/dist/umd/popper.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+    <title>Bootstrap Carousel Example</title>
+</head>
+
+<body>
+    <!-- Carousel Container -->
+    <!-- <div> element with id="myCarousel", class="carousel slide", and data-ride="carousel"
+             is the main container for a Bootstrap carousel. It's uniquely identified as "myCarousel," 
+             marked as a carousel with the "carousel" class, 
+             
+             and configured to automatically start
+             sliding through its content using the data-ride attribute due to data-ride="carousel" -->
+    <div id="myCarousel" class="carousel slide" data-ride="carousel">
+
+        <!-- Indicators -->
+        <!-- This section of code is responsible for creating the carousel indicators, 
+                which are small dots or markers typically shown below the carousel to indicate
+                 which slide is currently active.  -->
+        <ul class="carousel-indicators">
+            <!-- data-target="#myCarousel" indicates that these indicators are associated with 
+                the carousel container with the id="myCarousel" -->
+
+            <!-- The data-slide-to attribute specifies the index of the slide that each indicator 
+                corresponds to. -->
+            <li data-target="#myCarousel" data-slide-to="0" class="active"></li>
+            <li data-target="#myCarousel" data-slide-to="1"></li>
+            <li data-target="#myCarousel" data-slide-to="2"></li>
+        </ul>
+
+        <!-- Slides -->
+        <div class="container carousel-inner">
+            <!-- Slide 1 (Active) -->
+            <div class="carousel-item active">
+                <!-- try container class first then move to the container-fluid and width:100% in img -->
+                <img src="carr1.jpg" alt="Image 1" width="100%"> <!-- instead of width="100%" use d-block w-100 display:block -->
+            </div>
+
+            <!-- Slide 2 -->
+            <div class="carousel-item">
+                <img src="carr2.jpg" alt="Image 2" class="d-block w-100">
+            </div>
+
+            <!-- Slide 3 -->
+            <div class="carousel-item">
+                <img src="carr3.jpg" alt="Image 3" class="d-block w-100">
+            </div>
+        </div>
+
+        <!-- Controls -->
+        <a class="carousel-control-prev" href="#myCarousel" data-slide="prev">
+            <span class="carousel-control-prev-icon" style="background-color: red;"></span>
+        </a>
+        <a class="carousel-control-next" href="#myCarousel" data-slide="next">
+            <span class="carousel-control-next-icon text-primary" style="background-color: red;"></span>
+        </a>
+    </div>
+
+
+</body>
+
+</html>
