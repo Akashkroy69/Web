@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Other Psuedo classes</title>
+    <style>
+        p:first-child{
+            color: blue;
+        }
+
+        input{
+            width: 200px;
+            height: 30px;
+            color: gray;
+            border-color: gray;
+            background-color: rgb(182, 189, 189);
+            margin: 10px;
+            padding: 10px;
+        }
+
+        input:focus{
+            background-color: black;
+            color: white;
+        }
+        
+    </style>
+</head>
+<body>
+    <!-- first child -->
+    <p>para 1</p>
+    <p>para 2</p>
+
+
+    <div>
+        <p>para 1</p>
+        <p>para 2</p>
+
+    </div>
+
+    <form>
+        <label>Username</label>
+        <input type="text" placeholder="Enter Username">
+    </form>
+    
+</body>
+</html>
