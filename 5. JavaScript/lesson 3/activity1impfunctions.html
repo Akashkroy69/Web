@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html>
+  <body>
+    <h2>JavaScript String Methods</h2>
+    <p>Basic Methods</p>
+    <script>
+      var str = "AmAzInG";
+      document.write(str.toUpperCase());
+      document.write("<br>");
+      document.write(str.toLowerCase());
+      document.write("<br>");
+      document.write(str.startsWith('i'));
+      document.write("<br>");
+        
+        // Test Method -> returns true or false
+        var str1 = "I learnt aboutt Methods";
+        var patt = new RegExp("about");  //This line creates a regular expression pattern patt that matches the string "about".
+        var res = patt.test(str1);
+        document.write("is about in the str1? ",res);
+    </script>
+  </body>
+</html>

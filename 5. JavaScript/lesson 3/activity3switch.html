@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html>
+
+<body>
+    <h1>What is the day Today?</h1>
+    <p id="demo">Demo Day</p>
+    <script>
+        // var a = new Date().getDay()
+        // console.log(a)
+        var day;
+        switch (new Date().getDay()) {   //new Date().getDay(). The getDay() 
+            //method of the Date object returns the day of the week as an integer, 
+            //where Sunday is 0, Monday is 1, Tuesday is 2, and so on.
+            case 0:
+                day = "Sunday";
+                break;
+            case 1:
+                day = "Monday";
+                break;
+            case 2:
+                day = "Tuesday";
+                break;
+            case 3:
+                day = "Wednesday";
+                break;
+            case 4:
+                day = "Thursday";
+                break;
+            case 5:
+                day = "Friday";
+                break;
+            case 6:
+                day = "Saturday";
+        }
+        document.getElementById("demo").innerHTML = "Today is " + day;
+    </script>
+
+</body>
+
+</html>
