@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>1. Bootstrap Grid System</title>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css">
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"></script>
+    <style>
+        .col {
+            text-align: center;
+            border: 1px solid black;
+        }
+    </style>
+</head>
+
+<body>
+    <h3>Basic Grid</h3>
+    <div class="container">
+        <div class="row bg-primary ">
+            <div class="col bg-warning border">
+                column 1
+            </div>
+            <div class="col bg-warning border">
+                column 1
+            </div>
+            <div class="col bg-warning border">
+                column 1
+            </div>
+            <div class="col bg-warning border">
+                column 1
+            </div>
+        </div>
+    </div>
+
+    <h3>Grid on SM,lg,</h3>
+    <div class="container">
+        <div class="row bg-primary ">
+            <div class="col-xl-6 col-lg-4 col-md-2 col-sm-10 col-xs-2 bg-warning border">
+                column 1
+            </div>
+            <div class="col-xl-6 col-lg-4 col-md-10 col-sm-2 col-xs-2  bg-warning border">
+                column 2
+            </div>
+        </div>
+    </div>
+</body>
+
+</html>
+<!-- 
+
+    Bootstrap's grid system allows up to 12 columns across the page.
+-----------------------------------------------
+    Bootstrap's grid system is responsive, and the columns will re-arrange automatically depending on the screen size.
+------------------------------------------------
+    Bootstrap's grid system is responsive, and the columns will re-arrange depending on the screen size: On a big screen
+    it might look better with the content organized in three columns, 
+    but on a small screen it would be better if the content items were stacked on top of each other.
+--------------------------------------------------
+    Grid Classes
+
+The Bootstrap grid system has four classes:
+
+    xs (for phones - screens less than 768px wide)
+    sm (for tablets - screens equal to or greater than 768px wide)
+    md (for small laptops - screens equal to or greater than 992px wide)
+    lg (for laptops and desktops - screens equal to or greater than 1200px wide)
+------------------------------------------------
+RULES:
+    --Rows must be placed within a .container (fixed-width) or .container-fluid (full-width).
+    --Content should be placed within columns, and only columns may be immediate children of rows.
+
+ -->

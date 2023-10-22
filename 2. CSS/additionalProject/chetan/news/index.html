@@ -1,0 +1,152 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width">
+    <title>replit</title>
+    <link href="style.css" rel="stylesheet" type="text/css" />
+
+    <style>
+        nav li {
+            display: inline;
+            margin: 5px;
+        }
+
+
+
+
+
+
+        /* popup container design */
+        .popup-container {
+            display: none;
+            position: fixed;
+            top: 50%;
+            left: 50%;
+            transform: translate(-50%, -50%);
+            background-color: black;
+            color: #ffffff;
+            padding: 20px;
+            border: 1px solid black;
+        }
+
+        /* designing .overlay background */
+    </style>
+</head>
+
+<body>
+    <header style="text-align: center;">
+        <div id="header">
+            <h1>The News</h1>
+        </div>
+
+        <br>
+        <a href="sign.html"><button style="background-color: #9603ff; color: #000000">Login</button></a>
+        <!--pop-up container-->
+        <div>
+
+
+
+            <!-- Add a button to redirect to another page -->
+
+
+
+            <!--script for handling behavior-->
+            <script>
+
+
+                // JavaScript function to handle behavior
+                function togglePopup() {
+                    var popup = document.getElementById("popup");
+                    var overlay = document.getElementById("overlay");
+                    if (popup.style.display === "block") {
+                        popup.style.display = "none";
+                        overlay.style.display = "none";
+                    } else {
+                        popup.style.display = "block";
+                        overlay.style.display = "block";
+                    }
+                }
+            </script>
+
+        </div>
+
+        <br>
+        <hr />
+        <nav style="text-align: center;">
+            <nav style="text-align: center;">
+                <div class="navstyle">
+                    <ul>
+
+                        <li><a href="india.html"><button style="background-color: #2577fa; color: #fafbfc;">India <i
+                                        class="fa-solid fa-indian-rupee-sign"
+                                        style="color: #ffffff;  background-color: #2577fa;"></i></button></a></li>
+                        <li><a href="world.html"><button style="background-color: #2577fa; color: #fafbfc;">World <i
+                                        class="fa-solid fa-globe"
+                                        style="color: #ffffff; background-color: #2577fa;"></i></button></a></li>
+                        <li><a href="sports.html"><button style="background-color: #2577fa; color: #fafbfc;">Sports <i
+                                        class="fa-solid fa-basketball"
+                                        style="color: #ffffff; background-color: #2577fa;"></i></button></a></li>
+
+                    </ul>
+                </div>
+            </nav>
+            <hr />
+    </header>
+
+    <main style="text-align: center;">
+        <div class="divindia">
+            <h1 id="india" style="font-size: 40px;">India</h1>
+        </div>
+
+
+
+
+
+        <strong>
+            <p>Is the Opposition’s decision to boycott certain news anchors justified?</p>
+        </strong>
+
+
+        <br>
+        <img src="https://source.unsplash.com/400x400/?newspaper,anchors" style="border-radius: 50%;">
+        <br>
+        <div id="divdetails">
+            <p>The INDIA bloc recently announced that it would boycott 14 television news anchors as it did not did not
+                want to legitimise a “hate-filled narrative.</p>
+        </div>
+        <details>
+            <summary>Read More...</summary>
+            <p>It said that no representatives from the parties of the alliance will appear on the shows helmed by these
+                anchors. The Bharatiya Janata Party (BJP) said that the move showed an “Emergency-era mindset,” while
+                news broadcasters associations accused the Opposition of intolerance, undermining democracy, and setting
+                a dangerous precedent. Is the Opposition’s stand justified? Barkha Dutt and Abhinandan Sekhri discuss
+                the question in a conversation moderated by Priscilla Jebaraj. Edited excerpts:
+                <br>
+                Barkha Dutt is the founder-editor of Mojo Story, a multi-media digital platform; Abhinandan Sekhri is
+                the cofounder and CEO of Newslaundry, a media critique, news and current affairs website
+            </p>
+        </details>
+        <br>
+        <hr />
+        <a href="un.html"></a>
+        <p>Hanghzou Asian Games |<br>India gets second gold as Titas blows<br>away Sri Lanka in women’s cricket
+            final<br></p></a><a href="foreign.html">
+            <p>India rejects Canadian PM Justin Trudeau’s <br>allegations on killing of<br> pro-Khalistan activist
+                Hardeep Singh Nijjar,<br> expels diplomat</p>
+        </a>
+        <br>
+        <a href="#">
+            <p>Aditiya L1 probe leaves the Earth,<br> and sets off for the sun.</p>
+        </a>
+    </main>
+    <footer style="background-color: black; text-align: center; padding: 2px; border-color: #ffffff;">
+
+        <p>&copy; Copyright 2023 The News. All rights reserved</p>
+
+    </footer>
+    <script src="script.js"></script>
+</body>
+
+</html>
