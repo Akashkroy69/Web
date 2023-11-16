@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Class Concept</title>
+</head>
+
+<body>
+    <script>
+        class Person {
+            constructor(nameV, ageV, isStudentV) {
+                this.name = nameV;
+                this.age = ageV;
+                this.isStudent = isStudentV;
+            }
+
+            greet() {
+                console.log("Hello!",this.name);
+            }
+        }
+
+        // Creating an instance of the class
+        let person = new Person("John", 25, true);
+
+        console.log(person.name); // Accessing property
+        person.greet(); // Calling method
+
+    </script>
+</body>
+
+</html>
