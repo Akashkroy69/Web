@@ -10,6 +10,7 @@
 <body>
     <script>
         class Person {
+            static myStaticProperty = "Hello, I'm static!";
             constructor(nameV, ageV, isStudentV) {
                 this.name = nameV;
                 this.age = ageV;
@@ -17,7 +18,7 @@
             }
 
             greet() {
-                console.log("Hello!",this.name);
+                console.log("Hello!", this.name);
             }
         }
 
