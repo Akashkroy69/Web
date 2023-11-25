@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Arrow Function</title>
+</head>
+
+<body>
+    <script>
+        // let greet = function(){
+        //     document.write("hello Buddy ")
+        //     return 1;
+        // }
+        let greet = () => {
+            document.write("hello Buddy ")
+            return 1;
+        }
+        document.write(greet())
+
+        let sum = (a, b) =>a + b;
+        
+        document.write(sum(12,13),"<br>")
+
+        let objectDict = {
+            1: "A",
+            add: (a,b)=> a+b,
+        }
+
+        document.write(objectDict.add(123,2))
+    </script>
+
+</body>
+
+</html>

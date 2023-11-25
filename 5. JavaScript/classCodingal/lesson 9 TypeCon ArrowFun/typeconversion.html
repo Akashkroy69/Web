@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Type conversion</title>
+</head>
+
+<body>
+    <script>
+        // implicit conversion
+        let x = 5; // Number
+        let y = "10"; // String
+
+        let result = x + y; // JavaScript implicitly converts x to a string and performs string concatenation
+        console.log(result); // Outputs: "510"
+        // NOTE: In this example, the addition operation triggers implicit type conversion. JavaScript converts 
+        // the number x to a string to perform string concatenation with the string y.
+
+        // Explicit Type Conversion:
+        let num = 123;
+        let str = String(num);
+        console.log(str, typeof (str)); // Outputs: "123"
+
+        let str1 = "456";
+        let num1 = Number(str1);
+        console.log(num1, typeof (num1)); // Outputs: 456
+
+        // parseInt(string), parseFloat(string): Converts a string to an integer or floating-point number.
+        let strNum = "123.45";
+        let intNum = parseInt(strNum);
+        let floatNum = parseFloat(strNum);
+        console.log(intNum); // Outputs: 123
+        console.log(floatNum); // Outputs: 123.45
+
+        
+        let truthyValue = "Hello";
+        let falsyValue = "";
+        let isTruthy = Boolean(truthyValue);
+        let isFalsy = Boolean(falsyValue);
+        console.log(isTruthy); // Outputs: true
+        console.log(isFalsy); // Outputs: false
+
+
+
+
+
+
+    </script>
+
+</body>
+
+</html>
