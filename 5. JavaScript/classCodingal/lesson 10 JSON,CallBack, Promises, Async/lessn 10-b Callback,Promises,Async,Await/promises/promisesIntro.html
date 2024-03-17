@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Promises Concept</title>
+</head>
+
+<body>
+
+    <script>
+        // Promises:
+
+        // A Promise is an object that represents the eventual completion or failure of an asynchronous operation, 
+        // and its resulting value. A Promise can be in one of three states:
+        // 1. pending:The initial state; the promise is neither fulfilled nor rejected.
+        // 2. resolved: The operation completed successfully, and the promise has a resulting value.
+        // 3. rejected: The operation failed, and the promise has a reason for the failure.
+
+        // Creating a Promise: Promise using the Promise constructor, which takes a function as its argument. 
+        // This function, called the executor, takes two parameters: resolve and reject.
+        let promise = new Promise(function (resolve, reject) {
+            console.log("Hello promise");
+            resolve(true)
+        })
+
+        // console.log("Start")
+        // setTimeout(function () {
+        //     console.log("hello after 2 second")
+        // }, 2000)
+
+        // console.log("End")
+
+        console.log(promise)
+
+        // Using Promises:
+        // Chaining Promises:
+        // Error Handling:
+
+
+        // why promises are used? promises are used for parallel execution.
+        // fetch google.com ==> 
+        // fetch data from a data api
+        // fetch pictures from server
+
+    </script>
+</body>
+
+</html>

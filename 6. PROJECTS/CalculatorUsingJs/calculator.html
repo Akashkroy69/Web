@@ -42,7 +42,7 @@
 </head>
 <body>
   <div id="calculator">
-    <input type="text" id="display" disabled>
+    <input type="text" style="border: 2px solid white;" id="display" disabled>
     <br>
     <button onclick="appendToDisplay('7')">7</button>
     <button onclick="appendToDisplay('8')">8</button>
@@ -66,13 +66,14 @@
   </div>
 
   <script>
-    function appendToDisplay(value) {
-      document.getElementById('display').value += value;
+    function appendToDisplay(val) {
+      document.getElementById('display').value += val;
     }
 
     function clearDisplay() {
       document.getElementById('display').value = '';
     }
+
 
     function calculate() {
       try {

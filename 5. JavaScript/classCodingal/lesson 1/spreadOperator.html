@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Spread Operator</title>
+</head>
+
+<body>
+
+    <script>
+        var arr1 = [1, 2, 3]
+        var arr2 = [...arr1, 4, 5]
+        var arr3 = [...arr1, ...arr2]
+        arr1.push(4)
+        console.log(arr2)
+        // [1,2,3].. because spread operator will create the deep copy, so change in arr1 will not affect arr2
+
+        const obj1 = { a: 1, b: 2 };
+        const obj2 = { ...obj1, c: 3 };
+
+        console.log(obj2); // Output: { a: 1, b: 2, c: 3 }
+
+        function sum(...numbers) {
+            return numbers.reduce((acc, num) => acc + num, 0);
+        }
+
+        console.log(sum(1, 2, 3, 4)); // Output: 10
+
+
+    </script>
+
+</body>
+
+</html>

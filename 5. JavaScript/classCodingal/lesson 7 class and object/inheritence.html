@@ -21,6 +21,11 @@
         }
 
         class Dog extends Animal {
+            constructor(nameValue, breedValue){
+                super(nameValue);
+                this.breed = breedValue;
+
+            }
             makeSound() {
                 document.write("Woof! Woof!");
             }

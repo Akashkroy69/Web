@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Weather App</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            height: 100vh;
+            margin: 0;
+        }
+
+        #weather-container {
+            text-align: center;
+        }
+
+        #city-input {
+            padding: 10px;
+            font-size: 16px;
+        }
+
+        #get-weather-btn {
+            padding: 10px;
+            font-size: 16px;
+            cursor: pointer;
+        }
+
+        #weather-info {
+            margin-top: 20px;
+        }
+    </style>
+</head>
+
+<body>
+    <div id="weather-container">
+        <input type="text" id="city-input" placeholder="Enter city">
+        <button id="get-weather-btn" onclick="getWeather()">Get Weather</button>
+        <div id="weather-info"></div>
+    </div>
+
+    <script>
+        async function getWeather() {
+            const apiKey = 'YOUR_OPENWEATHERMAP_API_KEY'; // Replace with your API key
+            const city = document.getElementById('city-input').value;
+
+            if (!city) {
+                alert('Please enter a city name.');
+                return;
+            }
+
+            const apiUrl = `https://api.openweathermap.org/data/2.5/weather?q=${city}&appid=${apiKey}`;
+
+            try {
+                const response = await fetch(apiUrl);
+                const data = await response.json();
+
+                if (data.cod === '404') {
+                    alert('City not found. Please enter a valid city name.');
+                } else {
+                    displayWeather(data);
+                }
+            } catch (error) {
+                console.error('Error fetching weather data:', error);
+            }
+        }
+
+        function displayWeather(data) {
+            const weatherInfo = document.getElementById('weather-info');
+            weatherInfo.innerHTML = `
+        <h2>${data.name}, ${data.sys.country}</h2>
+        <p>Temperature: ${Math.round(data.main.temp - 273.15)}°C</p>
+        <p>Weather: ${data.weather[0].description}</p>
+      `;
+        }
+    </script>
+</body>
+
+</html>

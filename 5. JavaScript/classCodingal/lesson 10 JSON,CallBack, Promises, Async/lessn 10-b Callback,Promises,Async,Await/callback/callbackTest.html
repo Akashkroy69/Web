@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width">
+  <title>replit</title>
+  <link href="style.css" rel="stylesheet" type="text/css" />
+</head>
+
+<body>
+<script>
+
+
+  
+function fetchData(callback){
+  
+  setTimeOut(function(){
+    const data = "hey, I am tring to fetch data from WeatherAPI";
+    callback(data);
+  },2000)
+}
+
+  // callback function
+function processFetchData(data){
+  document.write("Processing Data: ", data, "<br>");
+  setTimeOut(function(){
+    document.write("I have fetched the data from WeatherAPI","<br>")
+  },5000)
+  
+}
+
+  // access the fetchData function
+  fetchData(processFetchData)
+</script>
+</body>
+
+</html>

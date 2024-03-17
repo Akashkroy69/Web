@@ -1,0 +1,13 @@
+{
+    "name" : "Akash",
+    "rollNum": 123,
+    "isStudent": true,
+    "liscenece": null,
+    "shopItem": ["shoe","book","Toothpaste"],
+    "myObj": {
+        "nameInMyObj": "nested",
+        "roll":23,
+        "shopItem2": ["shoe","book","Toothpaste",{"a": 1, "b": 2}]
+    }
+}
+

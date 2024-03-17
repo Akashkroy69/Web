@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Callbacks</title>
+</head>
+
+<body>
+
+    <script>
+        // A callback is a function passed as an argument to another function.
+        //  It allows you to specify what will happen after the completion of an asynchronous operation.
+        function fetchData(callback) {
+            setTimeout(function () {
+                const data = "Hello, I am trying to fetch DATA FROM weatherAPI";
+                callback(data);
+            }, 2000);
+        }
+
+        function processFetchedData(data) {
+            console.log("Processing data:", data);
+
+            setTimeout(function () {
+                console.log("data is fetched!!!")
+            }, 5000);
+        }
+
+        fetchData(processFetchedData);
+
+        // In this example, processFetchedData is a callback function passed to fetchData. 
+        // It gets executed once the asynchronous operation (simulated by setTimeout) is complete.
+    </script>
+
+</body>
+
+</html>

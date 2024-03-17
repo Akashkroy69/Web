@@ -1,0 +1,57 @@
+<!-- index.html -->
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Weather App</title>
+    <style>
+        body {
+            background: aqua;
+            color: azure;
+            padding: 0;
+            margin: 0;
+            font-size: 30px;
+            font-weight: bold;
+        }
+
+        .vid {
+            position: relative;
+            top: 250px;
+        }
+
+        #weatherInfoCard {
+            position: absolute;
+            top: 50%;
+            left: 50%;
+            transform: translate(-50%,-50%);
+            text-align: center;
+        }
+    </style>
+</head>
+
+<body>
+
+    <div class="vid" style="text-align: center;">
+            <video width="90%" height="90%" muted autoplay loop>
+
+                <source src="wVid.mp4" type="video/mp4">
+            </video>
+
+        <div id="weatherInfoCard">
+            <h1>Weather App</h1>
+            <label for="cityInput">Enter City:</label>
+            <input type="text" id="cityInput">
+            <button id="searchButton">Search</button>
+            <div id="weatherInfo"></div>
+         <!-- this is where I have wrtoteeb  the vode for weather app and we are going to connect -->
+        </div>
+    </div>
+
+
+
+    <script src="app.js"></script>
+</body>
+
+</html>
